@@ -1,0 +1,366 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Vertical Navigation Bar -->
+    <nav class="vertical-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Help</a></li>
+      </ul>
+    </nav>
+  
+    <!-- Horizontal Navigation Bar -->
+    <nav class="horizontal-nav">
+      <div class="chapter-box"><a href="ch-1.html">Chapter 1: Computer System</a></div>
+      <div class="chapter-box"><a href="ch-2.html">Chapter 2: Number System</a></div>
+      <div class="chapter-box"><a href="ch-3.html">Chapter 3: Software & OS</a></div>
+      <div class="chapter-box"><a href="ch-4.html">Chapter 4: Application Package</a></div>
+      <div class="chapter-box"  style=" background-color: #7D8F7D; color: #FFFFFF;"><a href="ch-5.html">Chapter 5: Programming</a></div>
+      <div class="chapter-box"><a href="ch-6.html">Chapter 6: Web Technology</a></div>
+      <div class="chapter-box"><a href="ch-7.html">Chapter 7: Multimedia</a></div>
+      <div class="chapter-box"><a href="ch-8.html">Chapter 8: Cyber Security</a></div>
+    </nav>
+  
+    <!-- Content Area -->
+    <div class="content">
+        <h1>Chapter-5: Programming</h1>
+        <h2>Introduction</h2>
+        <p>As we know, every computerized device does not work by itself. They needed to be given some sort of command that makes the computer work. These commands help to instruct the computer and program specific action required by the user. Since the command is given in the form of computer language, we need programming languages to write the set of instructions which command the computer to perform certain actions, collectively called programs. These programs are again integrated in order to make a complete software. Simply, software is the collection of different interrelated programs which perform specific functions.</p>
+        
+        <p>Programs written in any type of programming language are not understood by the computer. Hence, we need some sort of language translator or processor such as assembler, compiler, and interpreter, which has the basic function of converting programs written in any type of language into machine-level language.</p>
+    
+        <p>The program written by the programmer is known as the source program. After converting it, it becomes the program.</p>
+    
+        <h2>Qualities of Good Programs</h2>
+        <ul>
+            <li>It should be easily understood.</li>
+            <li>A program should be correct; it should be error-free.</li>
+            <li>It should be reliable.</li>
+            <li>It should have an easily understandable user interface.</li>
+            <li>It should be portable and flexible.</li>
+        </ul>
+    
+        <h2>Programming Language</h2>
+        <p>In order to make communication between the user and the computer, we need a computer language that helps the user to generate commands to perform as per the requirement. This language with which we can give instructions to the computer is known as programming language. Programming languages are the set of different keywords, variables, operators, loops, and other entities using different character sets, including numbers, special symbols, and alphanumeric values.</p>
+    
+        <p>Hence, the process of writing the programming language is known as programming, and the person who writes the program is a programmer.</p>
+    
+        <h3>Types of Programming Language</h3>
+        <p>There are several types of programming languages which can be categorized as follows:</p>
+    
+        <h4>1. Low Level Language</h4>
+        <p>Low-level languages are machine-dependent languages, meaning a program written for one type of system cannot be run on another system. Developers must have detailed analysis and knowledge about the system for which they are writing a program. Programming in low-level languages is difficult and time-consuming. Different types of low-level programming languages are:</p>
+    
+        <h5>a. Machine Level Language (1GL)</h5>
+        <p>This language consists of a sequence of 0’s and 1’s to generate instructions. Since it uses binary numbers, this type of language is directly understood by the processor. It has higher execution speed but is machine-dependent. Programmers must have detailed knowledge about the system.</p>
+    
+        <h6>Advantages:</h6>
+        <ul>
+            <li>It is directly understood by the processor, so execution speed is relatively high.</li>
+            <li>Language translator or processor is not needed.</li>
+            <li>It can be used to program specific-purpose computers.</li>
+        </ul>
+    
+        <h6>Disadvantages:</h6>
+        <ul>
+            <li>It is difficult and time-consuming to develop and debug programs.</li>
+            <li>It is machine-dependent, so a program developed for one system cannot be operated on another system.</li>
+            <li>All the syntax and commands are in the form of binary numbers, which are difficult to remember.</li>
+            <li>Programmers should have detailed knowledge about the particular system and its architecture.</li>
+        </ul>
+    
+        <h5>b. Assembly Language (2GL)</h5>
+        <p>Assembly language is a low-level language. Instead of writing instructions in binary, mnemonics (symbolic instructions) like ADD, SUB, RST, DIV, and MOD are used. This language is closer to machine-level language, so programmers need detailed knowledge of the internal architecture of the computer.</p>
+    
+        <h6>Advantages:</h6>
+        <ul>
+            <li>It is easier to write, debug, and understand programming compared to machine-level language.</li>
+            <li>Program execution is faster compared to high-level language.</li>
+            <li>It is used to develop different device drivers.</li>
+        </ul>
+    
+        <h6>Disadvantages:</h6>
+        <ul>
+            <li>It is machine-dependent, i.e., a program made for one processor doesn’t run on another processor.</li>
+            <li>Use of mnemonics makes assembly language more complex.</li>
+            <li>Program development and debugging are more difficult and time-consuming compared to high-level languages.</li>
+        </ul>
+    
+        <h4>2. High Level Language</h4>
+        <p>This language is close to the English language. High-level language code is written in an English-like structure using mathematical notation. It is easier to develop and debug programs and is machine-independent. Since high-level languages are not directly understood by computers, language processors like compilers and interpreters are needed to convert high-level programs to machine-level language.</p>
+    
+        <p>Some examples of high-level languages include C, C++, Python, JavaScript, etc.</p>
+    
+        <h6>Advantages:</h6>
+        <ul>
+            <li>It is easier to write, debug, and understand compared to low-level language.</li>
+            <li>It is machine-independent, so programs written for one processor can work on another processor.</li>
+            <li>Program development is faster and requires less effort.</li>
+        </ul>
+    
+        <h6>Disadvantages:</h6>
+        <ul>
+            <li>High-level language programs need to be converted before execution.</li>
+            <li>Program execution is slower compared to low-level language.</li>
+        </ul>
+    
+        <h5>High Level Languages can further be classified into:</h5>
+    
+        <h6>a. Procedural Oriented Language (3GL)</h6>
+        <p>This type of language primarily focuses on procedures rather than on data. It expresses the logic and procedures of the program. It follows a top-to-bottom approach, and is complex and time-consuming for writing large programs. Examples include C, Fortran, and QBasic.</p>
+    
+        <h6>Advantages:</h6>
+        <ul>
+            <li>Program development and debugging are easier compared to low-level languages.</li>
+            <li>More advanced and user-friendly software can be developed.</li>
+            <li>It is machine-independent.</li>
+            <li>It is used as a general-purpose programming language.</li>
+        </ul>
+    
+        <h6>Disadvantages:</h6>
+        <ul>
+            <li>A language translator or processor is required to execute the program.</li>
+            <li>Program execution is slower.</li>
+            <li>Data security is less compared to other high-level languages.</li>
+        </ul>
+    
+        <h6>b. Problem/Object-Oriented Language (4GL)</h6>
+        <p>This is an advanced form of high-level language that focuses on data rather than procedure. It allows users to specify what the output should be without describing all the details of how the data should be manipulated. It follows a bottom-up approach. Examples include C#, Java, and C++.</p>
+    
+        <h6>Advantages:</h6>
+        <ul>
+            <li>Web-based applications and software can be developed.</li>
+            <li>More advanced and user-friendly software can be developed.</li>
+            <li>It is machine-independent.</li>
+        </ul>
+    
+        <h6>Disadvantages:</h6>
+        <ul>
+            <li>A language translator is required to execute the program.</li>
+            <li>Program execution is slower.</li>
+            <li>It is difficult to develop hardware-oriented languages.</li>
+        </ul>
+    
+        <h6>c. Natural Language (5GL)</h6>
+        <p>Natural language uses simple statements of common communication language. It is still in the development stage. Programming languages like PROLOG are examples of natural language programming.</p>
+    
+        <h6>Advantages:</h6>
+        <ul>
+            <li>It will be easier to develop and debug the program.</li>
+            <li>It will be machine-independent.</li>
+            <li>More advanced and user-friendly programs will be made.</li>
+        </ul>
+    
+        <h6>Disadvantages:</h6>
+        <ul>
+            <li>A language translator is required to execute the program.</li>
+            <li>Program execution is slower.</li>
+            <li>It is difficult to develop hardware-oriented languages.</li>
+        </ul>
+    
+        <h2>Language Translator/Processor</h2>
+        <p>A language translator is a system development software that helps convert a program written in assembly or high-level language (source program) into machine-level language (object program). Since it is difficult and inconvenient to write a program in machine-level language, developers use high-level languages. To make it machine understandable, different types of language processors are used.</p>
+    
+        <h3>Types of Language Translators:</h3>
+        <ul>
+            <li><strong>Assembler:</strong> Converts assembly-level programs into machine-level programs.</li>
+            <li><strong>Compiler:</strong> Converts high-level language programs into machine-level programs.</li>
+            <li><strong>Interpreter:</strong> Converts one statement at a time from high-level to machine-level language.</li>
+        </ul>
+    
+        <h3>Difference between Compiler and Interpreter:</h3>
+        <table border="1">
+            <tr>
+                <th></th>
+                <th>Compiler</th>
+                <th>Interpreter</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>It translates the whole program into object code at a time.</td>
+                <td>It translates one line or a single statement of a program into object code at a time.</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>It finds out the error after compiling the complete program.</td>
+                <td>It finds out the error after translating a line of the program at a time.</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>The translating process is incredibly faster.</td>
+                <td>The translating process is slower.</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Compiler-based programs are difficult to code and debug.</td>
+                <td>Interpreter-based programs are easier to code and debug.</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>It usually requires a larger memory space.</td>
+                <td>It usually requires less memory space.</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>New programming languages don't use compilers.</td>
+                <td>New programming languages use interpreters.</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Examples: C, C++, Java, Fortran, etc.</td>
+                <td>Examples: BASIC, C#, PHP, etc.</td>
+            </tr>
+        </table>
+    
+        <h2>Syntax and Semantics</h2>
+        <p>As we know, programming languages help the user communicate with the computer. The user is governed by a set of codes which instruct the computer to perform a specific task. This set of codes and its structure is known as syntax. In addition, semantics is the meaning attached to an individual word or symbol in a programming language.</p>
+        
+        <p><strong>Example in QBasic:</strong></p>
+        <pre>
+            Print "This is programming"; P
+        </pre>
+        <p>Here, <strong>Print</strong> is Semantics and the whole line is the Structure (Syntax).</p>
+        <h2>Error (BUG):</h2>
+        <p>There may be several errors inside a program which stops the program from being executed. Thus, an error in a program is known as a bug. This type of error in a program may arise by not following proper rules given by the programming language due to poor problem analysis or maybe due to hardware failure. Error in the program may give ambiguous (not accepted/false) results. The process of removing error from a computer program is known as debugging. There are three types of error:</p>
+        
+        <h3>Types of Errors:</h3>
+        
+        <ul>
+            <li><strong>Syntax error:</strong> The error which may arise due to not following proper rules or format given by the programming language. Every programming language has its own vocabulary, punctuation, and structure. Programmers need to follow every detail while programming. This type of error can be detected by language processors such as compilers and interpreters. For example: In C, every statement should end with a semicolon, otherwise the error encountered is a syntax error.</li>
+            <li><strong>Logical error:</strong> Logic refers to the idea or concept used to solve a specific problem. If the problem is poorly understood, it may hamper the solution. The error that is encountered due to poorly developed logic is called a logical error. This type of error is not detected by the language processor. For example: In order to calculate simple interest, we use the formula I = (P*T*R)/100. If we write the formula as I = P*T*R, the error encountered is a logical error.</li>
+            <li><strong>Runtime error:</strong> When a program is running or executing, it is said to be runtime. Hence, the errors that are encountered/found while the program is being executed are known as runtime errors. It is also not detected by language translators. For example: Insufficient memory space, peripheral devices not turning on.</li>
+        </ul>
+        
+        <h2>Some Common Terminology in Programming:</h2>
+        
+        <h3>Data types:</h3>
+        <p>It specifies the type of data to be used in a program. Some common types of data types are:</p>
+        
+        <ul>
+            <li><strong>Numeric:</strong> It is the combination of all the positive and negative whole numbers, including zero.</li>
+            <li><strong>Character:</strong> It is the possible combination of all the alphanumeric values including special symbols.</li>
+        </ul>
+        
+        <h3>Variable and Constant:</h3>
+        
+        <ul>
+            <li><strong>Variable:</strong> Those entities that hold either numeric or alphanumeric values and change their value throughout the time of program execution.</li>
+            <li><strong>Constant:</strong> Those entities that hold either numeric or alphanumeric values but do not change their value throughout the time of program execution.</li>
+        </ul>
+        
+        <h3>Operands, Operators, and Operations:</h3>
+        
+        <p>Let us consider as:</p>
+        <pre>S = A + B</pre>
+        <p>Where S, A, B are operands, +, = are operators. S = A + B denotes the sum of two operands A and B, which is the operation.</p>
+        
+        <h3>Types of Operators:</h3>
+        <p>It is a special symbol which helps to make an operation successful, i.e., it helps to make some specific operation. Commonly used operators are:</p>
+        
+        <ul>
+            <li><strong>Arithmetic operators:</strong> +, -, /, *</li>
+            <li><strong>Relational operators:</strong> <, >, >=, <=, =</li>
+            <li><strong>Logical operators:</strong> AND, OR, NOT</li>
+        </ul>
+        
+        <h2>Program Design Tool:</h2>
+        
+        <p>There are several program design tools that are available. Some of the commonly used program design tools are algorithm, flowchart, and pseudocode.</p>
+        
+        <h3>Algorithm:</h3>
+        
+        <p>The step-by-step procedure or sequential steps for solving a specific problem is known as an algorithm. Algorithms are written in simple English language and are not closely related to any programming language.</p>
+        
+        <h4>Rules for writing an algorithm:</h4>
+        <ul>
+            <li>Algorithm should execute output after a finite step.</li>
+            <li>Algorithm should not depend upon any programming language.</li>
+            <li>Algorithm should terminate after finite steps.</li>
+        </ul>
+        
+        <h4>Examples:</h4>
+        <h5>1. Write an algorithm to calculate simple interest:</h5>
+        <pre>
+        Step 1: Start
+        Step 2: Read the value of P, T, R
+        Step 3: Calculate simple interest by using I = (P*T*R)/100
+        Step 4: Display simple interest (i)
+        Step 5: Stop
+        </pre>
+        
+        <h5>2. Write an algorithm to check the greatest number among two numbers:</h5>
+        <pre>
+        Step 1: Start
+        Step 2: Read any two numbers a, b
+        Step 3: Check if (a > b)
+            If yes, Display the greatest number is "a" and go to Step 4
+            If no, Display the greatest number is "b" and go to Step 4
+        Step 4: Stop
+        </pre>
+        
+        <h3>Flowchart:</h3>
+        <p>A flowchart is a diagrammatic or pictorial representation of the steps involved in an algorithm for solving a particular problem. It uses several geometrical shapes and symbols for representing different actions involved in problem solving. There are two types of flowcharts:</p>
+        
+        <ul>
+            <li><strong>Program Flowchart:</strong> A flowchart that focuses on a specific problem and portrays only a single task (logic) at a time.</li>
+            <li><strong>System Flowchart:</strong> A type of flowchart that shows the logical flow of a program and its collection. It shows the overview of data flow and sequence of operations in a system.</li>
+        </ul>
+        
+        <h3>Symbols used in Flowcharts:</h3>
+        <p>Symbol usage can vary depending on the flowchart type. You can represent actions like input, output, processes, and decisions using standard shapes.</p>
+        
+        <h3>What is C programming language?</h3>
+        <p>C is a high-level programming language developed by Dennis Ritchie at AT&T’s Bell Laboratories in 1970. It is a powerful programming language used for both system programming and application programming. It is often referred to as a middle-level programming language because it supports both low-level and high-level programming.</p>
+        
+        <h3>Features of C language:</h3>
+        
+        <ul>
+            <li>It supports both high-level and low-level programming, thus known as a mid-level programming language.</li>
+            <li>It is mostly used for system programming but is also popular for application programming.</li>
+            <li>Program development is faster and more efficient.</li>
+            <li>It has very powerful tools and keywords.</li>
+            <li>It uses its own text editor and compiler.</li>
+            <li>It supports structured programming.</li>
+            <li>It is portable and flexible in programming.</li>
+            <li>It has a powerful library function set.</li>
+        </ul>
+        
+        <h3>Advantages and Disadvantages of C Language:</h3>
+        
+        <h4>Advantages:</h4>
+        <ul>
+            <li>Suitable for system programming.</li>
+            <li>Easy to interact with hardware.</li>
+            <li>Easy to learn.</li>
+            <li>Program code is secure.</li>
+            <li>It is compact and efficient.</li>
+        </ul>
+        
+        <h4>Disadvantages:</h4>
+        <ul>
+            <li>It does not contain runtime checking.</li>
+            <li>No strict data type checking.</li>
+            <li>As the program extends, debugging becomes more complex because it uses a compiler instead of an interpreter for compilation.</li>
+            <li>A semicolon is required for each statement.</li>
+        </ul>
+        
+        <h3>Define the following terms:</h3>
+        
+        <ul>
+            <li><strong>Editor:</strong> The area in which we type the program. C language has its own text editor, but we can use any other text editor program as well.</li>
+            <li><strong>Pre-processor:</strong> A collection of complex codes that instruct the machine to understand certain keywords. It is written with a preceding # symbol. For example: #include, which uses instructions or complex codes from the file ‘stdio.h’. These .h files are called header files.</li>
+            <li><strong>Compiler:</strong> A software that changes the source code of a high-level programming language into machine-readable form called object code.</li>
+            <li><strong>Linker:</strong> A software that links various library files with the object codes and creates an executable file with a .exe extension. The .exe file can run independently.</li>
+        </ul>
+            
+    </div>
+
+  </body>
+  </html>
