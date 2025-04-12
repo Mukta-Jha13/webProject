@@ -1,0 +1,180 @@
+ /* Global Styles */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    background: linear-gradient(135deg, #8a5eb9 0%, #426cb4 100%);
+    color: white;
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding: 0.5rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.nav-links li {
+    margin-right: 2rem;
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffcc00;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* Main Content */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #6a11cb;
+    font-size: 1.8rem;
+}
+
+/* Chapter Grid */
+.chapter-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+/* Special class for the last row with 2 items */
+.last-row {
+    display: flex;
+    justify-content: center;
+    grid-column: 1 / -1;
+}
+
+.last-row .chapter-box {
+    width: calc(33.33% - 1.33rem); /* Same width as other boxes accounting for gap */
+    margin: 0 1rem;
+}
+
+.chapter-box {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chapter-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.chapter-img {
+    height: 180px;
+    background-color: #f0e6ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6a11cb;
+    font-size: 3rem;
+}
+
+.chapter-info {
+    padding: 1.5rem;
+    text-align: center;
+    background-color: #fffaf0;
+}
+
+.chapter-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.chapter-desc {
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .chapter-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .last-row {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .last-row .chapter-box {
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+@media (max-width: 480px) {
+    .chapter-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+    }
+    
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+    
+    .last-row .chapter-box {
+        width: 100%;
+    }
+}

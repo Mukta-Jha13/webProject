@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travel blog sharing adventures, experiences, and travel tips.">
+    <title>Pathless Pursuits</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+    const websiteName = "Pathless Pursuits"; // Change to your desired name
+    const textContainer = document.getElementById("animated-text");
+    const homepage = document.getElementById("homepage");
+
+    let index = 0;
+
+    function typeEffect() {
+        if (index < websiteName.length) {
+            textContainer.textContent += websiteName[index];
+            index++;
+            setTimeout(typeEffect, 200); // Adjust speed here
+        } else {
+            setTimeout(() => {
+                document.getElementById("loading-screen").style.display = "none";
+                homepage.style.display = "block";
+                setTimeout(() => {
+                    homepage.style.opacity = 1;
+                }, 100);
+            }, 1000);
+        }
+    }
+
+    typeEffect();
+});
+
+    </script>
+</head>
+<body>
+    <div id="loading-screen">
+        <h1 id="animated-text"></h1>
+    </div>
+    
+    <div id="homepage" class="hidden">
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#" style="font-family: Meow Script;">Pathless Pursuits</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Wander, Explore, Discover</h1>
+            <p>Join me as I share my travels to the most remote and beautiful destinations around the world.</p>
+        </div>
+    </section>
+
+    <!-- Blog Posts Section -->
+    <section class="blog">
+        <div class="blog-post">
+            <img src="travel-photo1.jpg" alt="Travel photo 1">
+            <h2>Bagan, Myanmar: Chasing Sunrises and Ancient Whispers</h2>
+            <p class="excerpt">A mystical land dotted with thousands of ancient temples, rising out of the mist like echoes from a forgotten past.</p>
+            <a href="Bagan.html" class="read-more">Read More</a>
+        </div>
+        <div class="blog-post">
+            <img src="travel-photo2.jpg" alt="Travel photo 2">
+            <h2>Torres del Paine National Park: A Journey into Patagonia’s Wild Heart</h2>
+            <p class="excerpt">where nature feels untouched, where the landscapes hold stories written in wind and stone4</p>
+            <a href="National Park.html" class="read-more">Read More</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>Follow me on social media for more travel stories and photos!</p>
+            <ul class="social-links">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

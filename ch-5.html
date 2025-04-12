@@ -1,0 +1,2655 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Notes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="ch.css">
+</head>
+<body>
+    <!-- Vertical Navigation Bar -->
+    <nav class="vertical-nav">
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+  
+        <!-- Content Area -->
+        <div class="content">
+            <h1>Chapter-5: Programming</h1>
+            <h2>Introduction</h2>
+            <p>As we know, every computerized device does not work by itself. They needed to be given some sort of command that makes the computer work. These commands help to instruct the computer and program specific action required by the user. Since the command is given in the form of computer language, we need programming languages to write the set of instructions which command the computer to perform certain actions, collectively called programs. These programs are again integrated in order to make a complete software. Simply, software is the collection of different interrelated programs which perform specific functions.</p>
+            
+            <p>Programs written in any type of programming language are not understood by the computer. Hence, we need some sort of language translator or processor such as assembler, compiler, and interpreter, which has the basic function of converting programs written in any type of language into machine-level language.</p>
+        
+            <p>The program written by the programmer is known as the source program. After converting it, it becomes the program.</p>
+        
+            <h2>Qualities of Good Programs</h2>
+            <ul>
+                <li>It should be easily understood.</li>
+                <li>A program should be correct; it should be error-free.</li>
+                <li>It should be reliable.</li>
+                <li>It should have an easily understandable user interface.</li>
+                <li>It should be portable and flexible.</li>
+            </ul>
+        
+            <h2>Programming Language</h2>
+            <p>In order to make communication between the user and the computer, we need a computer language that helps the user to generate commands to perform as per the requirement. This language with which we can give instructions to the computer is known as programming language. Programming languages are the set of different keywords, variables, operators, loops, and other entities using different character sets, including numbers, special symbols, and alphanumeric values.</p>
+        
+            <p>Hence, the process of writing the programming language is known as programming, and the person who writes the program is a programmer.</p>
+        
+            <h3>Types of Programming Language</h3>
+            <p>There are several types of programming languages which can be categorized as follows:</p>
+        
+            <h4>1. Low Level Language</h4>
+            <p>Low-level languages are machine-dependent languages, meaning a program written for one type of system cannot be run on another system. Developers must have detailed analysis and knowledge about the system for which they are writing a program. Programming in low-level languages is difficult and time-consuming. Different types of low-level programming languages are:</p>
+        
+            <h5>a. Machine Level Language (1GL)</h5>
+            <p>This language consists of a sequence of 0’s and 1’s to generate instructions. Since it uses binary numbers, this type of language is directly understood by the processor. It has higher execution speed but is machine-dependent. Programmers must have detailed knowledge about the system.</p>
+        
+            <h6>Advantages:</h6>
+            <ul>
+                <li>It is directly understood by the processor, so execution speed is relatively high.</li>
+                <li>Language translator or processor is not needed.</li>
+                <li>It can be used to program specific-purpose computers.</li>
+            </ul>
+        
+            <h6>Disadvantages:</h6>
+            <ul>
+                <li>It is difficult and time-consuming to develop and debug programs.</li>
+                <li>It is machine-dependent, so a program developed for one system cannot be operated on another system.</li>
+                <li>All the syntax and commands are in the form of binary numbers, which are difficult to remember.</li>
+                <li>Programmers should have detailed knowledge about the particular system and its architecture.</li>
+            </ul>
+        
+            <h5>b. Assembly Language (2GL)</h5>
+            <p>Assembly language is a low-level language. Instead of writing instructions in binary, mnemonics (symbolic instructions) like ADD, SUB, RST, DIV, and MOD are used. This language is closer to machine-level language, so programmers need detailed knowledge of the internal architecture of the computer.</p>
+        
+            <h6>Advantages:</h6>
+            <ul>
+                <li>It is easier to write, debug, and understand programming compared to machine-level language.</li>
+                <li>Program execution is faster compared to high-level language.</li>
+                <li>It is used to develop different device drivers.</li>
+            </ul>
+        
+            <h6>Disadvantages:</h6>
+            <ul>
+                <li>It is machine-dependent, i.e., a program made for one processor doesn’t run on another processor.</li>
+                <li>Use of mnemonics makes assembly language more complex.</li>
+                <li>Program development and debugging are more difficult and time-consuming compared to high-level languages.</li>
+            </ul>
+        
+            <h4>2. High Level Language</h4>
+            <p>This language is close to the English language. High-level language code is written in an English-like structure using mathematical notation. It is easier to develop and debug programs and is machine-independent. Since high-level languages are not directly understood by computers, language processors like compilers and interpreters are needed to convert high-level programs to machine-level language.</p>
+        
+            <p>Some examples of high-level languages include C, C++, Python, JavaScript, etc.</p>
+        
+            <h6>Advantages:</h6>
+            <ul>
+                <li>It is easier to write, debug, and understand compared to low-level language.</li>
+                <li>It is machine-independent, so programs written for one processor can work on another processor.</li>
+                <li>Program development is faster and requires less effort.</li>
+            </ul>
+        
+            <h6>Disadvantages:</h6>
+            <ul>
+                <li>High-level language programs need to be converted before execution.</li>
+                <li>Program execution is slower compared to low-level language.</li>
+            </ul>
+        
+            <h5>High Level Languages can further be classified into:</h5>
+        
+            <h6>a. Procedural Oriented Language (3GL)</h6>
+            <p>This type of language primarily focuses on procedures rather than on data. It expresses the logic and procedures of the program. It follows a top-to-bottom approach, and is complex and time-consuming for writing large programs. Examples include C, Fortran, and QBasic.</p>
+        
+            <h6>Advantages:</h6>
+            <ul>
+                <li>Program development and debugging are easier compared to low-level languages.</li>
+                <li>More advanced and user-friendly software can be developed.</li>
+                <li>It is machine-independent.</li>
+                <li>It is used as a general-purpose programming language.</li>
+            </ul>
+        
+            <h6>Disadvantages:</h6>
+            <ul>
+                <li>A language translator or processor is required to execute the program.</li>
+                <li>Program execution is slower.</li>
+                <li>Data security is less compared to other high-level languages.</li>
+            </ul>
+        
+            <h6>b. Problem/Object-Oriented Language (4GL)</h6>
+            <p>This is an advanced form of high-level language that focuses on data rather than procedure. It allows users to specify what the output should be without describing all the details of how the data should be manipulated. It follows a bottom-up approach. Examples include C#, Java, and C++.</p>
+        
+            <h6>Advantages:</h6>
+            <ul>
+                <li>Web-based applications and software can be developed.</li>
+                <li>More advanced and user-friendly software can be developed.</li>
+                <li>It is machine-independent.</li>
+            </ul>
+        
+            <h6>Disadvantages:</h6>
+            <ul>
+                <li>A language translator is required to execute the program.</li>
+                <li>Program execution is slower.</li>
+                <li>It is difficult to develop hardware-oriented languages.</li>
+            </ul>
+        
+            <h6>c. Natural Language (5GL)</h6>
+            <p>Natural language uses simple statements of common communication language. It is still in the development stage. Programming languages like PROLOG are examples of natural language programming.</p>
+        
+            <h6>Advantages:</h6>
+            <ul>
+                <li>It will be easier to develop and debug the program.</li>
+                <li>It will be machine-independent.</li>
+                <li>More advanced and user-friendly programs will be made.</li>
+            </ul>
+        
+            <h6>Disadvantages:</h6>
+            <ul>
+                <li>A language translator is required to execute the program.</li>
+                <li>Program execution is slower.</li>
+                <li>It is difficult to develop hardware-oriented languages.</li>
+            </ul>
+        
+            <h2>Language Translator/Processor</h2>
+            <p>A language translator is a system development software that helps convert a program written in assembly or high-level language (source program) into machine-level language (object program). Since it is difficult and inconvenient to write a program in machine-level language, developers use high-level languages. To make it machine understandable, different types of language processors are used.</p>
+        
+            <h3>Types of Language Translators:</h3>
+            <ul>
+                <li><strong>Assembler:</strong> Converts assembly-level programs into machine-level programs.</li>
+                <li><strong>Compiler:</strong> Converts high-level language programs into machine-level programs.</li>
+                <li><strong>Interpreter:</strong> Converts one statement at a time from high-level to machine-level language.</li>
+            </ul>
+        
+            <h3>Difference between Compiler and Interpreter:</h3>
+            <table border="1">
+                <tr>
+                    <th></th>
+                    <th>Compiler</th>
+                    <th>Interpreter</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>It translates the whole program into object code at a time.</td>
+                    <td>It translates one line or a single statement of a program into object code at a time.</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>It finds out the error after compiling the complete program.</td>
+                    <td>It finds out the error after translating a line of the program at a time.</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>The translating process is incredibly faster.</td>
+                    <td>The translating process is slower.</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Compiler-based programs are difficult to code and debug.</td>
+                    <td>Interpreter-based programs are easier to code and debug.</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>It usually requires a larger memory space.</td>
+                    <td>It usually requires less memory space.</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>New programming languages don't use compilers.</td>
+                    <td>New programming languages use interpreters.</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Examples: C, C++, Java, Fortran, etc.</td>
+                    <td>Examples: BASIC, C#, PHP, etc.</td>
+                </tr>
+            </table>
+        
+            <h2>Syntax and Semantics</h2>
+            <p>As we know, programming languages help the user communicate with the computer. The user is governed by a set of codes which instruct the computer to perform a specific task. This set of codes and its structure is known as syntax. In addition, semantics is the meaning attached to an individual word or symbol in a programming language.</p>
+            
+            <p><strong>Example in QBasic:</strong></p>
+            <pre>
+                Print "This is programming"; P
+            </pre>
+            <p>Here, <strong>Print</strong> is Semantics and the whole line is the Structure (Syntax).</p>
+            <h2>Error (BUG):</h2>
+            <p>There may be several errors inside a program which stops the program from being executed. Thus, an error in a program is known as a bug. This type of error in a program may arise by not following proper rules given by the programming language due to poor problem analysis or maybe due to hardware failure. Error in the program may give ambiguous (not accepted/false) results. The process of removing error from a computer program is known as debugging. There are three types of error:</p>
+            
+            <h3>Types of Errors:</h3>
+            
+            <ul>
+                <li><strong>Syntax error:</strong> The error which may arise due to not following proper rules or format given by the programming language. Every programming language has its own vocabulary, punctuation, and structure. Programmers need to follow every detail while programming. This type of error can be detected by language processors such as compilers and interpreters. For example: In C, every statement should end with a semicolon, otherwise the error encountered is a syntax error.</li>
+                <li><strong>Logical error:</strong> Logic refers to the idea or concept used to solve a specific problem. If the problem is poorly understood, it may hamper the solution. The error that is encountered due to poorly developed logic is called a logical error. This type of error is not detected by the language processor. For example: In order to calculate simple interest, we use the formula I = (P*T*R)/100. If we write the formula as I = P*T*R, the error encountered is a logical error.</li>
+                <li><strong>Runtime error:</strong> When a program is running or executing, it is said to be runtime. Hence, the errors that are encountered/found while the program is being executed are known as runtime errors. It is also not detected by language translators. For example: Insufficient memory space, peripheral devices not turning on.</li>
+            </ul>
+            
+            <h2>Some Common Terminology in Programming:</h2>
+            
+            <h3>Data types:</h3>
+            <p>It specifies the type of data to be used in a program. Some common types of data types are:</p>
+            
+            <ul>
+                <li><strong>Numeric:</strong> It is the combination of all the positive and negative whole numbers, including zero.</li>
+                <li><strong>Character:</strong> It is the possible combination of all the alphanumeric values including special symbols.</li>
+            </ul>
+            
+            <h3>Variable and Constant:</h3>
+            
+            <ul>
+                <li><strong>Variable:</strong> Those entities that hold either numeric or alphanumeric values and change their value throughout the time of program execution.</li>
+                <li><strong>Constant:</strong> Those entities that hold either numeric or alphanumeric values but do not change their value throughout the time of program execution.</li>
+            </ul>
+            
+            <h3>Operands, Operators, and Operations:</h3>
+            
+            <p>Let us consider as:</p>
+            <pre>S = A + B</pre>
+            <p>Where S, A, B are operands, +, = are operators. S = A + B denotes the sum of two operands A and B, which is the operation.</p>
+            
+            <h3>Types of Operators:</h3>
+            <p>It is a special symbol which helps to make an operation successful, i.e., it helps to make some specific operation. Commonly used operators are:</p>
+            
+            <ul>
+                <li><strong>Arithmetic operators:</strong> +, -, /, *</li>
+                <li><strong>Relational operators:</strong> <, >, >=, <=, =</li>
+                <li><strong>Logical operators:</strong> AND, OR, NOT</li>
+            </ul>
+            
+            <h2>Program Design Tool:</h2>
+            
+            <p>There are several program design tools that are available. Some of the commonly used program design tools are algorithm, flowchart, and pseudocode.</p>
+            
+            <h3>Algorithm:</h3>
+            
+            <p>The step-by-step procedure or sequential steps for solving a specific problem is known as an algorithm. Algorithms are written in simple English language and are not closely related to any programming language.</p>
+            
+            <h4>Rules for writing an algorithm:</h4>
+            <ul>
+                <li>Algorithm should execute output after a finite step.</li>
+                <li>Algorithm should not depend upon any programming language.</li>
+                <li>Algorithm should terminate after finite steps.</li>
+            </ul>
+            
+            <h4>Examples:</h4>
+            <h5>1. Write an algorithm to calculate simple interest:</h5>
+            <pre>
+            Step 1: Start
+            Step 2: Read the value of P, T, R
+            Step 3: Calculate simple interest by using I = (P*T*R)/100
+            Step 4: Display simple interest (i)
+            Step 5: Stop
+            </pre>
+            
+            <h5>2. Write an algorithm to check the greatest number among two numbers:</h5>
+            <pre>
+            Step 1: Start
+            Step 2: Read any two numbers a, b
+            Step 3: Check if (a > b)
+                If yes, Display the greatest number is "a" and go to Step 4
+                If no, Display the greatest number is "b" and go to Step 4
+            Step 4: Stop
+            </pre>
+            
+            <h3>Flowchart:</h3>
+            <p>A flowchart is a diagrammatic or pictorial representation of the steps involved in an algorithm for solving a particular problem. It uses several geometrical shapes and symbols for representing different actions involved in problem solving. There are two types of flowcharts:</p>
+            
+            <ul>
+                <li><strong>Program Flowchart:</strong> A flowchart that focuses on a specific problem and portrays only a single task (logic) at a time.</li>
+                <li><strong>System Flowchart:</strong> A type of flowchart that shows the logical flow of a program and its collection. It shows the overview of data flow and sequence of operations in a system.</li>
+            </ul>
+            
+            <h3>Symbols used in Flowcharts:</h3>
+            <p>Symbol usage can vary depending on the flowchart type. You can represent actions like input, output, processes, and decisions using standard shapes.</p>
+            
+            <h3>What is C programming language?</h3>
+            <p>C is a high-level programming language developed by Dennis Ritchie at AT&T’s Bell Laboratories in 1970. It is a powerful programming language used for both system programming and application programming. It is often referred to as a middle-level programming language because it supports both low-level and high-level programming.</p>
+            
+            <h3>Features of C language:</h3>
+            
+            <ul>
+                <li>It supports both high-level and low-level programming, thus known as a mid-level programming language.</li>
+                <li>It is mostly used for system programming but is also popular for application programming.</li>
+                <li>Program development is faster and more efficient.</li>
+                <li>It has very powerful tools and keywords.</li>
+                <li>It uses its own text editor and compiler.</li>
+                <li>It supports structured programming.</li>
+                <li>It is portable and flexible in programming.</li>
+                <li>It has a powerful library function set.</li>
+            </ul>
+            
+            <h3>Advantages and Disadvantages of C Language:</h3>
+            
+            <h4>Advantages:</h4>
+            <ul>
+                <li>Suitable for system programming.</li>
+                <li>Easy to interact with hardware.</li>
+                <li>Easy to learn.</li>
+                <li>Program code is secure.</li>
+                <li>It is compact and efficient.</li>
+            </ul>
+            
+            <h4>Disadvantages:</h4>
+            <ul>
+                <li>It does not contain runtime checking.</li>
+                <li>No strict data type checking.</li>
+                <li>As the program extends, debugging becomes more complex because it uses a compiler instead of an interpreter for compilation.</li>
+                <li>A semicolon is required for each statement.</li>
+            </ul>
+            
+            <h3>Define the following terms:</h3>
+            
+            <ul>
+                <li><strong>Editor:</strong> The area in which we type the program. C language has its own text editor, but we can use any other text editor program as well.</li>
+                <li><strong>Pre-processor:</strong> A collection of complex codes that instruct the machine to understand certain keywords. It is written with a preceding # symbol. For example: #include, which uses instructions or complex codes from the file ‘stdio.h’. These .h files are called header files.</li>
+                <li><strong>Compiler:</strong> A software that changes the source code of a high-level programming language into machine-readable form called object code.</li>
+                <li><strong>Linker:</strong> A software that links various library files with the object codes and creates an executable file with a .exe extension. The .exe file can run independently.</li>
+            </ul>
+               
+            
+        <h3>Define the character set.</h3>
+    
+        <p>The set of alphabets, digits, white characters and other symbols used in any programming language is called a character set. The character set used in C are:</p>
+    
+        <ul>
+    
+            <li><strong>Alphabet:</strong> A, B, C, ……..Z and a, b, c, ….z</li>
+    
+            <li><strong>Digits:</strong> 0, 1, 2, …………9</li>
+    
+            <li><strong>Special Symbols:</strong> ~ ‘ ! @ % ^ & * ( ) - _ + = | \ { }  []  : ; “ ‘ <> , . ? /</li>
+    
+        </ul>
+    
+    
+        <h3>Define comment.</h3>
+    
+        <p>Comment is a text or set of other characters, which is not compiled or executed from the compiler. It is written in the program to give required information to other programmers and the developers themselves. There are two types of comment writing methods:</p>
+    
+        <ul>
+    
+            <li><strong>Single line comment:</strong> It is written with the // symbol. <br> Eg. <code>// This is my first program.</code></li>
+    
+            <li><strong>Multi-line comment:</strong> It is written with /*………….*/ symbols. <br> Eg. <code>/* This is multi line comment style */</code></li>
+    
+        </ul>
+    
+    
+        <h3>Define C Tokens.</h3>
+    
+        <p>The set of identifiers, keywords, constants, variables and operators is known as C Tokens. It remains as a single unit and compiler does not break in the time of compilation.</p>
+    
+    
+        <h3>Define the following terms:</h3>
+    
+        <ul>
+    
+            <li><strong>Identifiers:</strong> Identifiers are names for entities in a C program, such as variables, arrays, functions, structures, unions and labels.</li>
+    
+            <li><strong>Keyword:</strong> Keyword is a reserved word that is already stored by the C language developer. The reserved word cannot be used as the identifiers. There are 32 Keywords in C according to the ANSI (American National Standard Institute) in C language. They are: void, printf, scanf, if, else, while, getch, do, for, break, continue etc.</li>
+    
+            <li><strong>Data types in C:</strong> The term Data Types in any language refers to the types of data which can be used in the program execution for entering and manipulating as the values. In the same way, the data types in C also refer to the data types, which can be used as the values. Basically it is of four types. They are:
+    
+                <ul>
+    
+                    <li><strong>int:</strong> It represents the integer type data. It means the numbers without the decimal points. It consumes 2 bytes memory. The derived data types from int are short int and long int.</li>
+    
+                    <li><strong>float:</strong> It means the real numbers with the decimal points. It consumes 4 Bytes memory space. It can also be signed and unsigned. Derived data types of it are double and long double.</li>
+    
+                    <li><strong>char:</strong> It is used for a single character (alphabet or symbol) like ‘A’, ‘f’, ‘@’ etc. It requires 1 byte memory. It can also be signed or unsigned.</li>
+    
+                    <li><strong>void:</strong> void means no value. It means null value. It is used for returning null value to the modules.</li>
+    
+                </ul>
+    
+            </li>
+    
+            <li><strong>Constants:</strong> (Definition not provided)</li>
+    
+            <li><strong>Variables:</strong> (Definition not provided)</li>
+    
+            <li><strong>Statements:</strong> The set of keywords, identifiers, operators, variables and constants ended with the semicolon or a curly bracket is called statement. It is of two types:
+    
+                <ul>
+    
+                    <li><strong>Simple Statement:</strong> The statement written in a single line and ended with the semicolon is simple statement. Eg. <code>printf (“My program”);</code></li>
+    
+                    <li><strong>Compound Statement:</strong> The group of simple statements grouped by the curly bracket open and close is the compound statement. Eg.
+    
+                        <pre><code>if (n>0)
+    
+    {
+    
+       a=b+c;
+    
+       x=x*x;
+    
+       printf(“%d %d”, a,x);
+    
+    }</code></pre>
+    
+                    </li>
+    
+                </ul>
+    
+            </li>
+    
+            <li><strong>Escape Sequences:</strong> The symbol \ or ‘ is supposed as the Escape character. It means, the compiler of C programming language understands this character and the text after this to take as a special case. And the set of this symbol and the character behind it is known as the Escape Sequence. Some common escape sequences are:
+    
+                <table>
+    
+                    <tr>
+    
+                        <th>Character</th>
+    
+                        <th>Escape</th>
+    
+                    </tr>
+    
+                    <tr>
+    
+                        <td>New Line</td>
+    
+                        <td>\n</td>
+    
+                    </tr>
+    
+                    <tr>
+    
+                        <td>Horizontal tab</td>
+    
+                        <td>\t</td>
+    
+                    </tr>
+    
+                    <tr>
+    
+                        <td>Null character</td>
+    
+                        <td>\0</td>
+    
+                    </tr>
+    
+                    <tr>
+    
+                        <td>Quotation mark</td>
+    
+                        <td>\”</td>
+    
+                    </tr>
+    
+                    <tr>
+    
+                        <td>Apostrophe</td>
+    
+                        <td>\’</td>
+    
+                    </tr>
+    
+                    <tr>
+    
+                        <td>Backslash (\)</td>
+    
+                        <td>\\</td>
+    
+                    </tr>
+    
+                </table>
+    
+            </li>
+    
+            <li><strong>Operators:</strong> The symbols, which are used to operate on the operands for the mathematical and logical calculations are known as operators. C programming language has a rich set of built-in operators. Operator that requires two operands are binary (dyadic) operators, operators that require one operand is unary (monadic) and the operator that requires three operands is ternary operator. Eg. <code>a+b</code>, here + is an operator.
+    
+                <h4>Types of operators:</h4>
+    
+                <ul>
+    
+                    <li>Arithmetic Operator</li>
+    
+                    <li>Relational Operator</li>
+    
+                    <li>Equality Operator</li>
+    
+                    <li>Logical Operator</li>
+    
+                    <li>Assignment Operator</li>
+    
+                    <li>Increment/Decrement Operator</li>
+    
+                    <li>Conditional Operator (Ternary Operator)</li>
+    
+                    <li>Bitwise Operator</li>
+    
+                    <li>Special Operator</li>
+    
+                </ul>
+    
+            </li>
+    
+            <li><strong>Library Functions:</strong> Functions are the independent sections or the block of statements given a specific name and they can be used by any program according to the requirements. They are developed to perform a certain task. They are of two types:
+    
+                <ul>
+    
+                    <li><strong>Library Functions:</strong> These are the ready-made formula-like functions stored in C language library. They can be used in any program. <code>abs(), printf (), scanf (), clrscr(), getch(), strlen(), sqrt(), etc.</code> are some examples of Library functions.</li>
+    
+                    <li><strong>User defined function:</strong> The functions developed by the users in their own program are called User-defined functions.</li>
+    
+                </ul>
+    
+            </li>
+    
+        </ul>
+    
+    
+        <h2>INPUT/OUTPUT (I/O) functions</h2>
+    
+        <ol>
+    
+            <li><strong>printf():</strong> It is a formatted output function. <br> Eg. <code>printf(“My School”);</code></li>
+    
+            <li><strong>scanf():</strong> It is to enter any value to the program. <br> Eg. <code>scanf(“%d”, &x);</code></li>
+    
+        </ol>
+    
+    
+        <h2>Program Example</h2>
+    
+        <h3>a)</h3>
+    
+        <p>Write a C program to enter any two numbers and print the sum of them.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    void main()
+    
+    {
+    
+     int a, b, s;
+    
+     clrscr();
+    
+     printf(“Enter First Number”);
+    
+     scanf(“%d”, &a);
+    
+     printf(“Enter Second Number”);
+    
+     scanf(“%d”, &b);
+    
+     s = a + b;
+    
+     printf (“The sum is %d”, s);
+    
+     getch();
+    
+    }</code></pre>
+    
+    
+        <h3>b)</h3>
+    
+        <p>Write a C program to calculate the area of a rectangle, where the length is 20 and breadth is 15.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    void main( )
+    
+    {
+    
+     int l = 20, b = 15;
+    
+     int a;
+    
+     clrscr();
+    
+     a = l * b;
+    
+     printf (“The area is %d”, a);
+    
+     getch();
+    
+    }</code></pre>
+    
+    
+        <h3>c)</h3>
+    
+        <p>WAP to calculate the area of a rectangle in C. [Hints: a = l x b]</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    void main()
+    
+    {
+    
+     int l, b, a;
+    
+     printf (“Enter Length: ”);
+    
+     scanf (“%d”, &l);
+    
+     printf (“Enter Breadth: “);
+    
+     scanf (“%d”, &b);
+    
+     a = l * b;
+    
+     printf (“The area is %d”, a);
+    
+     getch();
+    
+    }</code></pre>
+    
+    
+        <h3>d)</h3>
+    
+        <p>Write a program to enter length and breadth of a rectangle and calculate the perimeter. [p = 2 (l + b)]</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    void main ()
+    
+    {
+    
+     int l, b, p;
+    
+     printf (“Enter Length :”);
+    
+     scanf (“%d”, &l);
+    
+     printf (“Enter Breadth :”);
+    
+     scanf (“%d”, &b);
+    
+     p = 2 * (l + b);
+    
+     printf (“The perimeter is : %d”, p);
+    
+     getch();
+    
+    }</code></pre>
+    
+    
+        <h3>e)</h3>
+    
+        <p>WAP to calculate the area of a triangle.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    void main()
+    
+    {
+    
+     int b, h, a;
+    
+     printf (“Enter base and height”);
+    
+     scanf (“%d %d”, &b, &h);
+    
+     a = ½ * b * h;
+    
+     printf (“The area is %d”, a);
+    
+     getch();
+    
+    }</code></pre>
+    
+    
+        <h3>f)</h3>
+    
+        <p>WAP to enter the length of any one side of a square and calculate the area and perimeter in C language.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    void main ()
+    
+    {
+    
+     int l, a, p;
+    
+     clrscr ();
+    
+     printf (“Enter length”);
+    
+     scanf (“%d”, &l);
+    
+     a = l * l;
+    
+     p = 4 * l;
+    
+     printf (“The area is %d and the Perimeter is %d”, a, p);
+    
+     getch();
+    
+    }</code></pre>
+    
+    
+        <h3>g)</h3>
+    
+        <p>WAP to calculate the volume of a box.[v=l*b*h] (Do yourself)</p>
+    
+    
+        <h3>h)</h3>
+    
+        <p>WAP to enter the radius of a circle and print the circumference of it. [c = 2 pi r] (Do yourself)</p>
+    
+    
+        <h2>CONTROL STRUCTURE IN C (important)</h2>
+    
+        <p>Normally, the program execution flows top to the bottom lines of the programs. It means program executes one line after another. But sometimes we need to execute other parts of the programs or we need to divert the program flow from its normal execution. In such a case, we need some program statements, which are known as Control Structures. They are of three Types of control structure: a. sequence b. selection and c. looping</p>
+    
+    
+        <h3>A) Sequence:</h3>
+    
+        <p>Program generally flows from top left to top right bottom.</p>
+    
+        <p>WAP to enter the length, breadth and height of a box and calculate the total surface area (TSA). [TSA = 2 * (L*B + B*H + L*H)]</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    void main ()
+    
+    {
+    
+     int l, b, h, tsa;
+    
+     clrscr();
+    
+     printf (“Enter length, breadth and height”);
+    
+     scanf (“%d %d %d”, &l, &b, &h);
+    
+     tsa = 2 * (L*B + B*H + L*H);
+    
+     printf (“Total surface area is %d”, tsa);
+    
+     getch ();
+    
+    }</code></pre>
+    
+    
+        <p>WAP to enter the radius of a circle and calculate the area. [a = pi r 2]</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    void main ()
+    
+    {
+    
+     float r, a;
+    
+     printf (“Enter radius”);
+    
+     scanf (“%f”, &r);
+    
+     a = 22/7 * r * r;
+    
+     printf (“The area is %f”, a);
+    
+     getch();
+    
+    }</code></pre>
+    
+    
+        <h3>B) Selection/branching/condition:</h3>
+    
+        <p>These types of control structures change the flow of program execution with or without condition.</p>
+    
+    
+        <h4>B.1) Conditional Statements:</h4>
+    
+        <p>They break the program flow if the condition is matching. Eg. if, if….else and if…..else….if</p>
+    
+    
+        <h5>if condition</h5>
+    
+        <p>This condition is used for a single condition and single block of statements.</p>
+    
+        <pre><code>Syntax: 
+    
+    if (condition)
+    
+    {
+    
+     Block of statements'
+    
+    }</code></pre>
+    
+    
+        <h5>Example:</h5>
+    
+        <p>1. WAP to enter the marks of English and print “Pass” if it is 40 or more.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    void main ( )
+    
+    {
+    
+     float e;
+    
+     printf (“Enter English Marks \n”);
+    
+     scanf (“%f”, &e);
+    
+     if (e >=  40)
+    
+    {
+    
+     Printf (“Pass”);
+    
+    }
+    
+     getch ( );
+    
+    }</code></pre>
+    
+    
+        <p>Note: The above program states only about pass. If the marks are less than 40, it displays blank.</p>
+    
+    
+        <p>2. WAP to enter the age of a person and print “He can vote”, if the age is 18 or above.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    void main ( )
+    
+    {
+    
+     float a;
+    
+     printf (“Enter age \n”);
+    
+     scanf (“%f”, &a);
+    
+     if (a >=  18)
+    
+    {
+    
+     Printf (“You can vote”);
+    
+    }
+    
+     getch ( );
+    
+    }</code></pre>
+    
+    
+        <h5>If….else condition</h5>
+    
+        <p>This condition is used for double conditions and double blocks of statements.</p>
+    
+        <pre><code>Syntax:               
+    
+    if (condition)
+    
+    {
+    
+     Block of statements'
+    
+    }
+    
+    else
+    
+    {
+    
+     Block of statements'
+    
+    }</code></pre>
+    
+    
+        <h5>Example:</h5>
+    
+        <p>1. WAP to enter the marks of English and print “Pass” if it is 40 or more, otherwise “Fail”.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    void main ( )
+    
+    {
+    
+     float e;
+    
+     printf (“Enter English Marks \n”);
+    
+     scanf (“%f”, &e);
+    
+     if (e >=  40)
+    
+     {
+    
+      printf (“Pass”);
+    
+     }
+    
+     else
+    
+     {
+    
+       printf (“Fail”);
+    
+     }
+    
+     getch ( );
+    
+    }</code></pre>
+    
+    
+        <p>2. WAP to enter the age of a person and print “He can vote” if the age is 18 or above, otherwise print “He cannot vote”.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    void main ( )
+    
+    {
+    
+     float a;
+    
+     printf (“Enter age\n”);
+    
+     scanf (“%f”, &a);
+    
+     if (a >=  18)
+    
+     {
+    
+      printf (“You can vote”);
+    
+     }
+    
+     else
+    
+     {
+    
+       printf (“You cant vote”);
+    
+     }
+    
+     getch ( );
+    
+    }</code></pre>
+    
+    
+        <p>3. WAP to check whether the given number is odd or even.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    void main ( )
+    
+    {
+    
+     int n;
+    
+     printf (“Enter number\n”);
+    
+     scanf (“%d”, &n);
+    
+     if (n%2 ==  0)
+    
+     {
+    
+      printf (“%d is even”,n);
+    
+     }
+    
+     else
+    
+     {
+    
+      printf (“%d is odd”,n);
+    
+     }
+    
+     getch ( );
+    
+    }</code></pre>
+    
+    
+        <p>4. WAP to find the greatest among two numbers.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    void main ( )
+    
+    {
+    
+     int a,b;
+    
+     printf (“Enter two numbers\n”);
+    
+     scanf (“%d %d”, &a,&b);
+    
+     if (a>b)
+    
+     {
+    
+      printf (“%d is greatest”,a);
+    
+     }
+    
+     else
+    
+     {
+    
+      printf (“%d is greatest”,b);
+    
+     }
+    
+     getch ( );
+    
+    }</code></pre>
+    
+    
+        <h5>else if statement:</h5>
+    
+        <p>This statement is used for multiple conditions and multiple blocks of statements.</p>
+    
+        <pre><code>Syntax:
+    
+    if (condition 1)
+    
+    {
+    
+     Statement Block 1;
+    
+    }
+    
+    else if (condition 2)
+    
+    {
+    
+     Statement Block 2;
+    
+    }
+    
+    ..
+    
+    ..
+    
+    else
+    
+    {
+    
+    default statement
+    
+    }</code></pre>
+    
+    
+        <h5>Example 1:</h5>
+    
+        <p>WAP to enter a number and print “Positive” if it is greater than 0, print “Negative” if it is less than 0, otherwise print “Zero”.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    void main ( )
+    
+    {
+    
+    int n;
+    
+    printf("Enter number");
+    
+    scanf("%d",&n);
+    
+    if (n > 0 )
+    
+    {
+    
+     printf (“Positive”);
+    
+    }
+    
+    else if (n < 0 )
+    
+    {
+    
+      printf (“Negative”);
+    
+    }
+    
+    else
+    
+    {
+    
+     printf (“Zero”);
+    
+    }
+    
+    getch ( );
+    
+    }</code></pre>
+    
+    
+        <h5>Example 2:</h5>
+    
+        <p>WAP to enter the percentage and print the division.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    void main ()
+    
+    {
+    
+     float p;
+    
+     clrscr ( );
+    
+     printf (“Enter percentage:”);
+    
+     scanf (“%f”, &p);
+    
+     if (p >= 80 && p<=100)
+    
+     printf (“Distinction”);
+    
+     else if (p>=60 && p<80)
+    
+     printf (“First”);
+    
+     else if (p>=50 && p<60)
+    
+     printf (“Second”);
+    
+     else if ( p>=40 && p<50)
+    
+     printf (“Third”);
+    
+     else
+    
+     printf("fail");
+    
+    getch ();
+    
+    }</code></pre>
+    
+    
+        <h5>Example 3:</h5>
+    
+        <p>WAP to enter 3 numbers and print the greatest number.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    void main ( )
+    
+    {
+    
+    int a,b,c;
+    
+    printf("Enter numbers");
+    
+    scanf("%d %d %d",&a,&b,&c);
+    
+    if (a>b && a>c)
+    
+    {
+    
+     printf (“%d is greatest”,a);
+    
+    }
+    
+    else if (b>a && b>c)
+    
+    {
+    
+      printf (“%d is greatest”,b);
+    
+    }
+    
+    else
+    
+    {
+    
+       printf (“%d is greatest”,c);
+    
+    }
+    
+    getch ( );
+    
+    }</code></pre>
+    
+    
+        <h4>B.2) Unconditional Statements:</h4>
+    
+        <p>They break the program flow without any condition. Eg. goto statement.</p>
+    
+        <pre><code>Syntax
+    
+    label:
+    
+    goto label;
+    
+    OR
+    
+    goto label;
+    
+    label:</code></pre>
+    
+    
+        <h5>Program example of goto:</h5>
+    
+        <p>This program allows the user to only enter values under 100.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    void main ()
+    
+    {
+    
+     float p;
+    
+     clrscr ( );
+    
+     label:
+    
+     printf (“Enter percentage:”);
+    
+     scanf (“%f”, &p);
+    
+     if (p > 100)
+    
+     {
+    
+     printf (“Invalid input”);
+    
+     goto label;
+    
+     }
+    
+     getch();
+    
+    }</code></pre>
+    
+    
+        <h3>C) Looping:</h3>
+    
+        <p>Loop is the process of repeating any block of statements up to the given number of times or until the given condition is not over.</p>
+    
+        <p>There are three types of Loop: 1. for loop 2. while loop and 3. do while loop</p>
+    
+    
+        <h4>FOR… loop:</h4>
+    
+        <p>Syntax of for loop:</p>
+    
+        <pre><code>for (initialization; condition; increment/decrement)
+    
+    {
+    
+        Statements (s);
+    
+    }</code></pre>
+    
+    
+        <h5>Examples:</h5>
+    
+        <p>a) 1, 2, 3, 4, ………….100.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    int main()
+    
+    {
+    
+        int i;
+    
+        for (i=1;i<=100;i++)
+    
+        {
+    
+            printf("%d\n",i);
+    
+        }
+    
+        return 0;
+    
+    }</code></pre>
+    
+    
+        <p>b) 1, 3, 5, 7, ……………..99.</p>
+    
+        <p>c) 2, 4, 6, 8, ………………100.</p>
+    
+        <p>d) 5, 10, 15, ………………….50.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    int main()
+    
+    {
+    
+        int i,s;
+    
+        for (i=1;i<=10;i++)
+    
+        {
+    
+            s=5*i;
+    
+            printf("%d\n",s);
+    
+        }  
+    
+        return 0;
+    
+    }</code></pre>
+    
+    
+        <p>WAP to calculate the sum of n-natural numbers.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    int main()
+    
+    {
+    
+        int n,i,s=0;
+    
+        printf("Enter any number\t");
+    
+        scanf("%ld",&n);
+    
+        for (i=1;i<=n;i++)
+    
+        {
+    
+            s=s+i;
+    
+        }
+    
+        printf("Sum  is %d\n",s);
+    
+        return 0;
+    
+    }</code></pre>
+    
+    
+        <p>WAP to calculate the product of n-natural numbers. (Factorial of a given number).</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    int main()
+    
+    {
+    
+        int n,i,p=1;
+    
+        printf("Enter any number\t");
+    
+        scanf("%d",&n);
+    
+        for (i=1;i<=n;i++)
+    
+        {
+    
+            p=p*i;
+    
+        }
+    
+        printf(“Product  is %d\n”,p);
+    
+        return 0;
+    
+    }</code></pre>
+    
+    
+        <p>WAP to generate Fibonacci series. [0,1,1,2,3,5,8 …..10th term]</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    int main()
+    
+    {
+    
+        int i,a=0,b=1,c;
+    
+        printf(“%d%d””,a,b);
+    
+        for (i=1;i<=10;i++)
+    
+        {
+    
+           c=a+b;
+    
+           printf(“%d”,c);
+    
+           a=b;
+    
+           b=c;        
+    
+        }
+    
+        return 0;
+    
+    }</code></pre>
+    
+    
+        <p>WAP to generate 1 2 4 7 11 ...............10th term.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    int main()
+    
+    {
+    
+        int i,a=1,g=1;
+    
+        for (i=1;i<=10;i++)
+    
+        {
+    
+           printf(“%d”,a);
+    
+           a=a+g;
+    
+           g=g+1; 
+    
+        }
+    
+        return 0;
+    
+    }</code></pre>
+    
+    
+        <p>WAP to generate 1 2 5 10 17 ...............10th term.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    int main()
+    
+    {
+    
+        int i,a=1,g=1;
+    
+        for (i=1;i<=10;i++)
+    
+        {
+    
+           printf(“%d”,a);
+    
+           a=a+g;
+    
+           g=g+2;
+    
+        }
+    
+        return 0;
+    
+    }</code></pre>
+    
+    
+        <p>WAP to generate 3 12 27 48 ................10th term.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    int main()
+    
+    {
+    
+        int a,i;
+    
+        for (i=1;i<=10;i++)
+    
+        {
+    
+           a=3*I*I;       
+    
+           printf(“%d”,a);
+    
+        }
+    
+        return 0;
+    
+    }</code></pre>
+    
+    
+        <h4>WHILE Loop (Entry Control loop)</h4>
+    
+        <p>Syntax:</p>
+    
+        <pre><code>while(condition)
+    
+    {
+    
+    Block of statements;
+    
+    }</code></pre>
+    
+    
+        <p>WAP to calculate the sum of n-natural numbers.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    int main()
+    
+    {
+    
+        int n,s=0,i=1;
+    
+        printf("Enter any number\t");
+    
+        scanf("%d",&n);
+    
+        while (i<=n)
+    
+        {
+    
+             s = s+i;
+    
+             i=i+1;    
+    
+        }
+    
+        printf("Sum of digits is %ld\n",s);
+    
+        return 0;
+    
+    }</code></pre>
+    
+    
+        <p>WAP to calculate the product of digits of a given number.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    int main()
+    
+    {
+    
+        int n,p=1,i=1;
+    
+        printf("Enter any number\t");
+    
+        scanf("%d",&n);
+    
+        while (i<=n)
+    
+        {
+    
+             p = p*i;
+    
+             i=i+1;    
+    
+        }
+    
+        printf(“Product of digits is %d\n”,p);
+    
+        return 0;
+    
+    }</code></pre>
+    
+    
+        <p>WAP to generate 1 2 4 7 11 ...............10th term.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    int main()
+    
+    {
+    
+        int i=1,a=1,g=1;
+    
+        while (i<=10)
+    
+        {
+    
+           printf(“%d”,a);
+    
+           a=a+g;
+    
+           g=g+1;
+    
+           i=i+1;
+    
+        }
+    
+        return 0;
+    
+    }</code></pre>
+    
+    
+        <p>WAP to calculate the sum of digits of a given number.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    int main()
+    
+    {
+    
+        int n,s=0,r;
+    
+        printf("Enter any number\t");
+    
+        scanf("%d",&n);
+    
+        while (n!=0)
+    
+        {
+    
+            r = n%10;
+    
+            s = s+r;
+    
+            n = n/10;
+    
+        }
+    
+        printf("Sum of digits is %d\n",s);
+    
+        return 0;
+    
+    }</code></pre>
+    
+    
+        <p>WAP to calculate the product of digits of a given number.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    int main()
+    
+    {
+    
+        int n,p=1,r;
+    
+        printf("Enter any number\t");
+    
+        scanf("%d",&n);
+    
+        while (n!=0)
+    
+        {
+    
+            r = n%10;
+    
+            p = p*r;
+    
+            n = n/10;
+    
+        }
+    
+        printf(“Product of digits is %d\n”,p);
+    
+        return 0;
+    
+    }</code></pre>
+    
+    
+        <p>WAP to reverse a given number.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    int main()
+    
+    {
+    
+        int n,p=0,r;
+    
+        printf("Enter any number\t");
+    
+        scanf("%d",&n);
+    
+        while (n!=0)
+    
+        {
+    
+            r = n%10;
+    
+            p = p*10+r;
+    
+            n = n/10;
+    
+        }
+    
+        printf(“Reverse is %d\n”,p);
+    
+        return 0;
+    
+    }</code></pre>
+    
+    
+        <p>WAP to check whether the given number is palindrome or not.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    int main()
+    
+    {
+    
+        int n,p=0,r,z;
+    
+        printf("Enter any number\t");
+    
+        scanf("%d",&n);
+    
+        z=n;
+    
+        while (n!=0)
+    
+        {
+    
+            r = n%10;
+    
+            p = p*10+r;
+    
+            n = n/10;     
+    
+        }
+    
+        if (z==p)
+    
+        {
+    
+        printf(“%d is palindrome \n”,z);
+    
+        }
+    
+       else
+    
+       {
+    
+        printf(“%d is not palindrome \n”,z);
+    
+       }
+    
+        return 0;
+    
+    }</code></pre>
+    
+    
+        <p>WAP to check whether the given number is armstrong or not. [153 is Armstrong]</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    int main()
+    
+    {
+    
+        int n,s=0,r,z;
+    
+        printf("Enter any number\t");
+    
+        scanf("%d",&n);
+    
+        z=n;
+    
+        while (n!=0)
+    
+        {
+    
+            r = n%10;
+    
+            s = s+pow(r,3);
+    
+            n = n/10;
+    
+        }
+    
+        if (z==s)
+    
+        {
+    
+        printf(“%d is armstrong \n”,z);
+    
+        }
+    
+       else
+    
+       {
+    
+        printf(“%d is not armstrong \n”,z);
+    
+       }
+    
+        return 0;
+    
+    }</code></pre>
+    
+    
+        <h4>DO Loop</h4>
+    
+        <p>Syntax:</p>
+    
+        <pre><code>do
+    
+    {
+    
+    Block of statements;
+    
+    }while(condition);</code></pre>
+    
+    
+        <p>WAP to calculate the sum of n-natural numbers.</p>
+    
+        <pre><code>#include &lt;stdio.h&gt;
+    
+    int main()
+    
+    {
+    
+        int n,s=0,i=1;
+    
+        printf("Enter any number\t");
+    
+        scanf("%d",&n);
+    
+        do
+    
+        {
+    
+             s = s+i;
+    
+             i=i+1;    
+    
+        }while (i<=n);
+    
+        printf("Sum of digits is %ld\n",s);
+    
+        return 0;
+    
+    }</code></pre>
+    
+    
+        <h2>Array</h2>
+    
+        <p>An array is a collection of variables of the same type that are represented by a common name i.e. an array is the collection of homogenous data type (Contains similar data). If we declare an array as int then it must only contain all integer data and the same for floats and char. Each array element is specified by the array name followed by index or subscript enclosed in square brackets (eg, a[10]). Hence, it is also called indexed or subscripted variables. In an array index of array represent the size of an array.</p>
+    
+        <p>Let us consider, <code>int age[5]</code></p>
+    
+        <p>This means array name is age which is capable of storing 5 different data under integer datatype.</p>
+    
+        <ul>
+    
+            <li><code>age[0] = 15</code></li>
+    
+            <li><code>age[1] = 25</code></li>
+    
+            <li><code>age[2] = 13</code></li>
+    
+            <li><code>age[3] = 22</code></li>
+    
+            <li><code>age[4] = 17</code></li>
+    
+        </ul>
+    
+    
+        <h3>Types of array</h3>
+    
+        <p>Depending upon the number of subscripts or index number array are of 2 types:</p>
+    
+        <ol>
+    
+            <li>1-Dimension</li>
+    
+            <li>N-Dimension (Multi-dimension)</li>
+    
+        </ol>
+    
+    
+        <h4>1-Dimension:</h4>
+    
+        <p>This type of array has only one subscript.</p>
+    
+        <p>Declaration:</p>
+    
+        <pre><code>Data_type array_name[size]</code></pre>
+    
+        <p>Example:</p>
+    
+        <pre><code>int salary[100]</code></pre>
+    
+    
+        <h5>Program example.</h5>
+    
+        <p>Q1. WAP to input 10 different numbers and print them all.</p>
+    
+        <pre><code>
+            #include  &lt;stdio.h&gt;
+    
+    int main()
+    
+    {
+    
+        int a[10], i;
+    
+        printf ("Enter any 10 numbers");
+    
+        for(i=0;i<10;i++)
+    
+        {
+    
+            scanf("%d",&a[i]);
+    
+        }
+    
+        for(i=0;i<10;i++)
+    
+        {
+    
+            printf(“%d”,&a[i]);
+    
+        }
+    
+            return 0;
+    
+    }</code></pre>
+  
+<h3>Q2. Program to Calculate Average Salary of 1000 Employees</h3>
+<pre><code>#include &lt;stdio.h&gt;
+int main()
+{
+    int sal[1000], i, s=0;
+    float av;
+    printf("Enter any 10 number");
+    for(i=0;i&lt;1000;i++)
+    {
+        scanf("%d",&amp;sal[i]);
+    }
+    for(i=0;i&lt;1000;i++)
+    {
+        s=s+sal[i];
+    }
+   av = s/1000;
+   printf("Average salary of 1000 employee is %f", av);
+   return 0;
+}</code></pre>
+
+<h3>Q3. Program to Count Employees with Salary Between 30000 and 50000</h3>
+<pre><code>#include &lt;stdio.h&gt;
+int main()
+{
+    int sal[1000], i, c=0;
+    for(i=0;i&lt;1000;i++)
+    {
+        scanf("%d",&amp;sal[i]);
+    }
+    for(i=0;i&lt;1000;i++)
+    {
+        if(sal[i]&gt;=30000 &amp;&amp; sal[i]&lt;=50000)
+            {
+               c=c+1;
+            }
+     }
+   printf("Total number of employee is %d", c);
+   return 0;
+}</code></pre>
+
+<h3>Q5. Program to Find Greatest Among 10 Numbers</h3>
+<pre><code>#include &lt;stdio.h&gt;
+int main()
+{
+    int a[10], i, g;
+    printf("Enter any 10 number");
+    for(i=0;i&lt;10;i++)
+    {
+        scanf("%d",&amp;a[i]);
+    }
+    g = a[0];
+    for (i=0;i&lt;10;i++)
+    {
+        if (g&lt;a[i])
+        {
+            g=a[i];
+        }
+    }
+    printf("Greatest number is %d\n",g);
+    return 0;
+}</code></pre>
+
+<h3>Q6. Program to Sort 10 Numbers in Ascending Order</h3>
+<pre><code>#include &lt;stdio.h&gt;
+int main()
+{
+    int a[10], i, j, temp;
+    printf("Enter any 10 number");
+    for(i=0;i&lt;10;i++)
+    {
+        scanf("%d",&amp;a[i]);
+    }
+    for (i=0;i&lt;10;i++)
+    {
+        for (j=0;j&lt;9;j++)
+        {
+            if (a[j]&gt;a[j+1])
+                {
+                temp = a[j];
+                a[j] = a[j+1];
+                a[j+1] = temp;
+                }
+        }
+    }
+    printf("Ascending order is");
+    for (i=0;i&lt;10;i++)
+    {
+        printf("%d \t",a[i]);
+    }
+    return 0;
+}</code></pre>
+
+<h3>Q3 (Revised). Program to Count Employees with Salary Between 30000 and 50000 (n employees)</h3>
+<pre><code>#include &lt;stdio.h&gt;
+int main()
+{
+    int sal[1000], i, c=0, n;
+    printf("Enter the number of employees");
+    scanf("%d",&amp;n);
+    for(i=0;i&lt;n;i++)
+    {
+        scanf("%d",&amp;sal[i]);
+    }
+    for(i=0;i&lt;n;i++)
+    {
+        if(sal[i]&gt;=30000 &amp;&amp; sal[i]&lt;=50000)
+            {
+               c=c+1;
+            }
+     }
+   printf("Total number of employee is %d", c);
+   return 0;
+}</code></pre>
+
+<h3>N-Dimension (Multidimensional Array)</h3>
+<p>This type of array has more than one subscript.</p>
+<p>Declaration:</p>
+<p>Data_type array_name[size][size]</p>
+<p>Example:</p>
+<p>int n[3][3]</p>
+
+<h4>Program Examples</h4>
+
+<h5>Q1. Program to Input and Display 3x3 Matrix</h5>
+<pre><code>#include &lt;stdio.h&gt;
+int main()
+{   int a[3][3],i,j;
+    printf("Enter 9 number");
+    for (i=0;i&lt;3;i++)
+    {
+        for (j=0;j&lt;3;j++)
+        {
+            scanf("%d",&amp;a[i][j]);
+        }
+    }
+    for (i=0;i&lt;3;i++)
+    {
+        for (j=0;j&lt;3;j++)
+        {
+            printf("%d\t",a[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}</code></pre>
+
+<h5>Q2. Program to Perform Matrix Addition</h5>
+<pre><code>#include &lt;stdio.h&gt;
+int main()
+{   int a[3][3], b[3][3], c[3][3],i ,j;
+    printf("Enter 9 number");
+    for (i=0;i&lt;3;i++)
+    {
+        for (j=0;j&lt;3;j++)
+        {
+            scanf("%d%d",&amp;a[i][j],&amp;b[i][j]);
+        }
+    }
+    for (i=0;i&lt;3;i++)
+    {
+        for (j=0;j&lt;3;j++)
+        {
+            c[i][j] = a[i][j] + b[i][j];
+        }
+        printf("\n");
+    }
+printf("Added matrix is");
+for (i=0;i&lt;3;i++)
+    {
+        for (j=0;j&lt;3;j++)
+        {
+            printf("%d \t",c[i][j]);
+        }
+printf("\n");
+    }
+    return 0;
+}</code></pre>
+
+<h5>Q2. Program to Perform Matrix Multiplication</h5>
+<pre><code>#include &lt;stdio.h&gt;
+int main()
+{   int a[3][3], b[3][3], p[3][3],i ,j, k;
+    printf("Enter 9 number");
+    for (i=0;i&lt;3;i++)
+    {
+        for (j=0;j&lt;3;j++)
+        {
+            scanf("%d%d",&amp;a[i][j],&amp;b[i][j]);
+        }
+    }
+    for (i=0;i&lt;3;i++)
+    {
+        for (j=0;j&lt;3;j++)
+        {
+            p[i][j] = 0;
+            for(k=0;k&lt;3;k++)
+                  {
+                    p[i][j] = p[i][j] + a[i][k]*b[k][j];
+                  }
+       }   
+     }
+printf("Multiplied matrix is");
+for (i=0;i&lt;3;i++)
+    {
+        for (j=0;j&lt;3;j++)
+        {
+            printf("%d \t",p[i][j]);
+        }
+printf("\n");
+    }
+    return 0;
+}</code></pre>
+
+<h3>String Handling</h3>
+<p>String is a group of characters that can be represented only by character array. To represent a character/string we use 'char' datatype.</p>
+<p>i.e. char a, char a='x'</p>
+<p>Where, char is data type and a is string variable and 'x' is a character.</p>
+
+<h4>String Initialization</h4>
+<p>We can initialize string as one-dimension character array as:</p>
+<p>Char a[5] = "hello" which is stored in array as follow</p>
+<table border="1">
+    <tr>
+        <th>a[0]</th><th>a[1]</th><th>a[2]</th><th>a[3]</th><th>a[4]</th><th>a[5]</th>
+    </tr>
+    <tr>
+        <td>'h'</td><td>'e'</td><td>'l'</td><td>'l'</td><td>'o'</td><td>\0</td>
+    </tr>
+</table>
+
+<p>We can initialize array of string as two-dimension array as:</p>
+<p>Char a[2][5] = {"ball", "cat", "apple"}, which is stored in array as follow</p>
+<table border="1">
+    <tr>
+        <th>a[2][5]</th><th>a[0]</th><th>a[1]</th><th>a[2]</th><th>a[3]</th><th>a[4]</th><th>a[5]</th>
+    </tr>
+    <tr>
+        <td>a[0]</td><td>'b'</td><td>'a'</td><td>'l'</td><td>'l'</td><td>\0</td><td></td>
+    </tr>
+    <tr>
+        <td>a[1]</td><td>'c'</td><td>'a'</td><td>'t'</td><td>\0</td><td></td><td></td>
+    </tr>
+    <tr>
+        <td>a[2]</td><td>'a'</td><td>'p'</td><td>'p'</td><td>'l'</td><td>'e'</td><td>\0</td>
+    </tr>
+</table>
+
+<h3>String Handling Functions [Library Function / Inbuilt Function]</h3>
+<p>These are functions given by C-library itself or inbuilt in C-library. They are defined under the header file 'string.h'.</p>
+
+<h4>1. strlen()</h4>
+<p>Function: Returns total number of characters in a given string.</p>
+<p>Syntax: strlen(string);</p>
+<pre><code>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main()
+{
+    char a[10];
+    int l;
+    printf("Enter any string");
+    scanf("%s",a);
+    l=strlen(a);
+    printf("The length is %d",l);
+    return 0;
+}</code></pre>
+
+<h4>2. strrev()</h4>
+<p>Function: Returns reverse of given string.</p>
+<p>Syntax: strrev(string);</p>
+<pre><code>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main()
+{
+    char a[10];
+    printf("Enter any string");
+    scanf("%s",a);
+    strrev(a);
+    printf("The reverse is %s",a);
+    return 0;
+}</code></pre>
+
+<h4>3. strlwr()</h4>
+<p>Function: Returns given string in lower case.</p>
+<p>Syntax: strlwr(string);</p>
+<pre><code>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main()
+{
+    char a[10];
+    printf("Enter any string");
+    scanf("%s",a);
+    strlwr(a);
+    printf("The lower case is %s",a);
+    return 0;
+}</code></pre>
+
+<h4>4. strupr()</h4>
+<p>Function: Returns given string in upper case.</p>
+<p>Syntax: strupr(string);</p>
+<pre><code>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main()
+{
+    char a[10];
+    printf("Enter any string");
+    scanf("%s",a);
+    strupr(a);
+    printf("The upper case is %s",a);
+    return 0;
+}</code></pre>
+
+<h4>5. strcpy()</h4>
+<p>Function: Copies one string to another.</p>
+<p>Syntax: strcpy(destination_string,source_string);</p>
+<pre><code>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main()
+{
+    char a[10],b[10];
+    printf("Enter any string");
+    scanf("%s",a);
+    strcpy(b,a);
+    printf("The copied string is %s",b);
+    return 0;
+}</code></pre>
+
+<h4>6. strcat()</h4>
+<p>Function: Concatenates two strings.</p>
+<p>Syntax: strcat(string1,string2);</p>
+<pre><code>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main()
+{
+    char a[10],b[10];
+    printf("Enter first string");
+    scanf("%s",a);
+    printf("Enter second string");
+    scanf("%s",b);
+    strcat(a,b);
+    printf("The added string is %s",a);
+    return 0;
+}</code></pre>
+
+<h4>7. strcmp()</h4>
+<p>Function: Compares two strings and returns 0 if equal.</p>
+<p>Syntax: strcmp(string1,string2);</p>
+<pre><code>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main()
+{
+    char a[10],b[10];
+    int x;
+    printf("Enter first string");
+    scanf("%s",a);
+    printf("Enter second string");
+    scanf("%s",b);
+    x = strcmp(a,b);
+    printf("The compared value is %d",x);
+    return 0;
+}</code></pre>
+
+<h3>Palindrome Check Program</h3>
+<pre><code>#include &lt;stdio.h&gt;
+#include &lt;string.h&gt;
+int main()
+{   char a[10],b[10];
+    printf("Enter string");
+    scanf("%s",a);
+    strcpy(b,a);
+    strrev(a);
+    if(strcmp(a,b)==0)
+        {
+            printf("%s is palindrome",b);
+        }
+        else
+        {   
+            printf("%s is not palindrome",b);
+        }
+    return 0;
+}</code></pre>
+
+    <div class="note">
+        <strong>Extra:</strong> 
+        <h3>Fibonacci Series Program</h3>
+<pre><code>#include &lt;stdio.h&gt;
+int main(){
+    int i,n,c,a=0,b=1;
+    printf("Enter a number: ");
+    scanf("%d", &n);
+    printf("%d %d", a,b);
+    
+    for(i=1;i&lt;=n-2;i++){
+        c=a+b;
+        printf(" %d", c);
+        a=b;
+        b=c;
+    }
+    
+    return 0;
+}</code></pre>
+<h4>Output:</h4>
+<img src="1.jpg">
+
+<h3>Factorial Program</h3>
+<pre><code>#include &lt;stdio.h&gt;
+int main(){
+    int i,n,factorial=1;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+    
+    for(i=1;i&lt;=n;i++){
+        factorial=factorial*i;
+    }
+    printf("%d", factorial);
+    return 0;
+}</code></pre>
+<h4>Output:</h4>
+<img src="2.jpg">
+
+<h3>Palindrome Check Program</h3>
+<pre><code>#include &lt;stdio.h&gt;
+int main()
+{
+    int n,p=0,r,z;
+    printf("Enter any number\t");
+    scanf("%d",&n);
+    z=n;
+    while (n!=0)
+    {
+        r = n%10;
+        p = p*10+r;
+        n = n/10;    
+    }
+    if (z==p)
+    {
+    printf("%d is palindrome \n",z);
+    }
+    else
+    {
+    printf("%d is not palindrome \n",z);
+    }
+    return 0;
+}</code></pre>
+<h4>Output:</h4>
+<img src="3.jpg">
+
+<h3>Prime Number Check Program</h3>
+<pre><code>#include &lt;stdio.h&gt;
+int main(){
+    int i,n,count=0;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+
+    for(i=1;i&lt;=n;i++){
+        if(n%i==0){
+            count++;
+        }
+    }
+    if(count==2){
+        printf("Its a prime number");
+    }
+    else{
+        printf("Its not a prime number");
+    }
+}</code></pre>
+<h4>Output:</h4>
+<img src="4.jpg">
+
+<h3>Perfect Number Check Program</h3>
+<pre><code>#include &lt;stdio.h&gt;
+int main(){
+    int i,n,s=0;
+    printf("Enter a number: ");
+    scanf("%d",&n);
+
+    for(i=1;i&lt;n;i++){
+        if(n%i==0){
+            s=s+i;
+        }
+    }
+
+    if(s==n){
+        printf("Its a perfect number");
+    }
+    else{
+        printf("Its not a perfect number");
+    }
+}</code></pre>
+<h4>Output:</h4>
+<img src="5.jpg">
+
+<h3>Arrays</h3>
+<p>An array is a collection of variables of same type that are represented by a common name i.e. array is the collection of homogenous data type (Contains similar datas). If we declare array as int then it must only contain all integer data and same for floats and char. Each array element is specified by array name followed by index or subscript enclosed in square bracket (eg, a[10]). Hence, it is also called indexed or subscripted variables. In an array index of array represent the size of an array.</p>
+
+<p>Let us consider, int age[5]</p>
+
+<p>This mean array name is age which is capable of storing 5 different data under integer datatype.</p>
+
+<p>age[0] = 15</p>
+<p>age[1] = 25</p>
+<p>age[2] = 13</p>
+<p>age[3] = 22</p>
+<p>age[4] = 17</p>
+
+<h3>Types of array</h3>
+<p>Depending upon the number of subscript or index number array are of 2 types:</p>
+<ol>
+    <li>1-Dimension</li>
+    <li>N-Dimension (Multi-dimension)</li>
+</ol>
+
+<h4>1-Dimension:</h4>
+<p>This type of array has only one subscript.</p>
+<p>Declaration:</p>
+<p>Data_type array_name[size]</p>
+<p>Example:</p>
+<p>int salary[100]</p>
+
+<h4>N-Dimension (Multidimension array)</h4>
+<p>This type of array has more than one subscript.</p>
+<p>Declaration:</p>
+<p>Data_type array_name[size][size]</p>
+<p>Example:</p>
+<p>int n[3][3]</p>
+
+<h3>Strings</h3>
+<p>String is a group of characters that can be represented only by character array. To represent a character/string we use 'char' datatype.</p>
+<p>i.e. char a, char a='x'</p>
+<p>Where, char is data type and a is string variable and 'x' is a character.</p>
+
+<p>Similarly, we can initialize string as one-dimension character array as:</p>
+<p>Char a[5] = "hello" which is stored in array as follow</p>
+<pre>a[0] a[1] a[2] a[3] a[4] a[5]
+'h'  'e'  'l'  'l'  'o'  \0</pre>
+
+<p>we can initialize array of string as two-dimension array as:</p>
+<p>Char a[2][5] = {"ball" , "cat" , "apple"}, which is stored in array as follow</p>
+<pre>a[2][5] a[0] a[1] a[2] a[3] a[4] a[5]
+a[0]    'b'   'a'   'l'   'l'   \0
+a[1]    'c'   'a'   't'   \0
+a[2]    'a'   'p'   'p'   'l'   'e'   \0</pre>
+
+<h3>String handling function [Library function / Inbuilt function]</h3>
+<p>As we know, functions are the self contained program that performs certain task. Similarly the function which are given by C-library itself or inbuilt in C-library are known as library or inbuilt-function. String handling function or string function are the library functions which are used to manipulate strings in our program for simplicity and convenience. This inbuilt functions are defined under the header file 'string.h'. In C we have several string handling functions which are as follows:</p>
+
+<h3>Iterative control structures</h3>
+<p>In iteration control structures, a statement or block is executed until the program reaches a certain state, or operations have been applied to every element of a collection. This is usually expressed with keywords such as for, while do while.</p>
+
+<h4>For loop:</h4>
+<p>When we know exactly how many times you want to loop through a block of code, we use the for loop instead of a while loop.</p>
+<p>Syntax:</p>
+<pre>for (Initialization; condition; increment/ decrement)
+{
+    Statements;
+}</pre>
+
+<h4>Example:</h4>
+<pre><code>#include &lt;stdio.h&gt;
+int main()
+{
+    { printf(" Executed by: Mukta Jha\n");
+    }
+    int i;
+
+    for (i = 1; i &lt; 10; i++)
+    {
+        printf("%d\n", i);
+    }
+
+    return 0;
+}</code></pre>
+
+<h4>While loop:</h4>
+<p>The while loop loops through a block of code as long as a specified condition is true.</p>
+<p>Syntax:</p>
+<pre>Initialization
+While (condition)
+{
+    Statement s;
+    Increment/ decrement;
+}</pre>
+
+<h4>Example:</h4>
+<pre><code>#include &lt;stdio.h&gt;
+int main()
+{
+    { printf(" Executed by: Mukta Jha\n");
+    }
+    int i=1;
+    while (i&lt;=10)
+    {
+        printf("Nepal\n");
+        i++;
+    }
+    return 0;
+}</code></pre>
+
+<h4>Do while:</h4>
+<p>This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true.</p>
+<p>Syntax:</p>
+<pre>initialization;
+do
+{
+    statement s;
+    increment/decrement;
+}
+while (condition);</pre>
+
+<h4>Example:</h4>
+<pre><code>#include &lt;stdio.h&gt;
+int main()
+{
+    {
+        printf (" Executed by: Mukta Jha\n");
+    }
+    int i=1;
+    do
+    {
+        printf("Computer\n");
+        i++;
+    } while (i&lt;=5);
+    return 0;
+}</code></pre>
+
+<h3>Nested loop:</h3>
+<p>A loop inside a loop is called nested loop.</p>
+
+<h4>Nested for loop:</h4>
+<p>Nested for loops are used to cycle through matrix and tabular data and multi-dimensional arrays.</p>
+<p>Syntax:</p>
+<pre>for (initialization; condition; increment/ decrement)
+{
+    For (initialization; condition; increment/ decrement)
+    {
+        statements;
+    }
+}</pre>
+
+<h4>Example:</h4>
+<pre><code>#include &lt;stdio.h&gt;
+int main()
+{
+    {
+        printf("Executed by: Mukta Jha\n");
+    }
+    int i,j;
+    for ( i = 5; i &lt;= 25; i+=5)
+    {
+        for ( j = 5; j &lt;= 25; j+=5)
+        {
+            printf("%d ", j);
+        }
+        printf("\n");
+    }
+    return 0;
+}</code></pre>
+
+<h4>Nested while loop:</h4>
+<p>Syntax:</p>
+<pre>while(condition) {
+    while(condition) {
+        // statement of inside loop
+    }
+    // statement of outer loop
+}</pre>
+
+<h4>Example:</h4>
+<pre><code>#include &lt;stdio.h&gt;
+
+int main()
+{
+    {
+        printf("Executed by: Mukta Jha\n");
+    }
+    int i = 1;
+    while (i &lt;= 5) {
+        printf("\n");
+        int j = 1;
+        while (j &lt;= i) {
+            printf("%d ", j);
+            j++;
+        }
+        i++;
+    }
+    return 0;
+}</code></pre>
+
+<h4>Nested do while loop:</h4>
+<p>Syntax:</p>
+<pre>do{
+    do{
+        // statement of inside loop
+    }while(condition);
+
+    // statement of outer loop
+}while(condition);</pre>
+
+<h4>Example:</h4>
+<pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    {
+        printf("Executed by: Mukta Jha\n");
+    }
+    int i = 1;
+    do {
+        int j = 1;
+        do {
+            printf("%d * %d = %d\n", i, j, i*j);
+            j++;
+        } while(j &lt;= 3);
+        i++;
+    } while(i &lt;= 3);
+    return 0;
+}</code></pre>
+
+
+    </div>
+
+        </div>
+    
+      </body>
+      </html>

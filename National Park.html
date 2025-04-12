@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travel blog sharing adventures, experiences, and travel tips.">
+    <title>Pathless Pursuits</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Hero Overlay */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 72%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Blog Container */
+.blog-container {
+    display: flex;
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Main Blog Content */
+.blog-content {
+    flex: 2;
+}
+
+.blog-content h2 {
+    margin-top: 30px;
+    font-size: 2rem;
+    color: #2a2a2a;
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #2a2a2a;
+}
+
+.related-post {
+    margin-bottom: 20px;
+}
+
+.related-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.related-post p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .blog-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        order: -1;
+    }
+}
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar (Unchanged) -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#" style="font-family: Meow Script;">Pathless Pursuits</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section with Gradient Overlay -->
+    <section class="hero" style="background-image: url('travel-photo2.jpg');">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Torres del Paine National Park</h1>
+            <p>A Journey into Patagonia’s Wild Heart</p>
+        </div>
+    </section>
+
+    <!-- Main Content with Sidebar -->
+    <main class="blog-container">
+        <!-- Main Article Content -->
+        <article class="blog-content">
+            <p class="head">There are places in the world where nature feels untouched, where the landscapes hold stories written in wind and stone. Torres del Paine National Park in Chilean Patagonia is one such place. A land of jagged peaks, glacial rivers, and vast golden plains, this remote wilderness calls out to adventurers, inviting them to walk among its towering wonders and witness the raw beauty of the natural world.</p>
+            
+            <h2>The Iconic Towers at Sunrise</h2>
+            <img src="towersunrise.webp" alt="Tower Sunrise" class="blog-image">
+            <p class="head">If there’s one moment that captures the essence of Torres del Paine, it’s watching the sun paint the granite spires—Las Torres—with fiery hues. The trek to the base is no easy feat, winding through lenga forests, rocky moraines, and steep ascents. But the reward? An awe-inspiring view of the three colossal towers reflected in a milky blue glacial lake, glowing with the first light of day. It’s a sight that leaves you breathless, not just from the climb, but from the sheer magnitude of nature’s artistry.</p>
+            
+            <h2>Trekking the W and O Circuits</h2>
+            <img src="trek.webp" alt="Trekking" class="blog-image">
+            <p class="head">Torres del Paine is a hiker’s paradise, offering legendary trails like the W and O Circuits. The W trek, a multi-day journey through the park’s most stunning highlights, leads adventurers past the French Valley, Grey Glacier, and the famous towers. For those seeking an even deeper immersion, the O Circuit encircles the entire park, revealing hidden valleys, pristine rivers, and views that few ever witness. Along the way, refugios and campsites provide cozy shelters where weary hikers share stories over steaming cups of yerba mate.</p>
+            
+            <h2>Wildlife Among the Peaks and Plains</h2>
+            <img src="wildlife.webp" alt="Wild Life" class="blog-image">
+            <p class="head">Beyond the staggering landscapes, Torres del Paine is home to a rich tapestry of wildlife. Herds of guanacos roam the golden grasslands, their alert eyes always scanning for the elusive pumas that prowl the park’s wilderness. Andean condors soar effortlessly on the fierce Patagonian winds, while foxes dart between the underbrush. If you pause long enough, you might even hear the distant thunder of an ice chunk breaking away from Grey Glacier, a reminder of the park’s ever-changing beauty.</p>
+            
+            <h2>Savoring Patagonia’s Flavors</h2>
+            <img src="flavour.jpg" alt="Food" class="blog-image">
+            <p class="head">After long days of trekking, nothing beats a hearty Patagonian meal. Whether it’s a warm bowl of cazuela (Chilean stew), a juicy cordero al palo (slow-roasted lamb), or a glass of robust Carménère wine, the flavors of Patagonia are as bold as its landscapes. Sitting by a fire with a plate of food and recounting the day’s adventures with fellow travelers is part of the magic that makes this journey unforgettable.</p>
+            
+            <h2>A Land of Untamed Beauty</h2>
+            <p class="head">Torres del Paine is not just a destination—it’s an experience that stays with you long after you leave. It’s the whisper of the wind through the valleys, the crunch of ice beneath your boots, the feeling of insignificance in the face of towering peaks. It’s a place where nature reigns supreme, where adventure awaits around every bend, and where those who venture into its wild embrace leave forever changed.
+
+                So if your soul longs for the untamed, for landscapes that challenge and inspire, pack your gear and head to Torres del Paine. The wild heart of Patagonia is waiting.</p>
+        </article>
+
+        <!-- Sidebar for Related Content -->
+        <aside class="sidebar">
+            <h3>Related Posts</h3>
+            <div class="related-post">
+                <img src="travel-photo2.jpg" alt="Related Post 1">
+                <p>Exploring the National Park</p>
+            </div>
+            <div class="related-post">
+                <img src="travel-photo1.jpg" alt="Related Post 2">
+                <p>A Guide to Myanmar's Hidden Gems</p>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer (Unchanged) -->
+    <footer>
+        <div class="footer-content">
+            <p>Follow me on social media for more travel stories and photos!</p>
+            <ul class="social-links">
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

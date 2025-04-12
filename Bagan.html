@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travel blog sharing adventures, experiences, and travel tips.">
+    <title>Pathless Pursuits</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Hero Overlay */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 72%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Blog Container */
+.blog-container {
+    display: flex;
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Main Blog Content */
+.blog-content {
+    flex: 2;
+}
+
+.blog-content h2 {
+    margin-top: 30px;
+    font-size: 2rem;
+    color: #2a2a2a;
+}
+
+.blog-image {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Sidebar */
+.sidebar {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #2a2a2a;
+}
+
+.related-post {
+    margin-bottom: 20px;
+}
+
+.related-post img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.related-post p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .blog-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        order: -1;
+    }
+}
+    </style>
+</head>
+<body >
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="#" style="font-family: Meow Script;">Pathless Pursuits</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+   <!-- Hero Section with Gradient Overlay -->
+   <section class="hero" style="background-image: url('travel-photo1.jpg');">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Bagan, Myanmar</h1>
+        <p>Chasing Sunrises and Ancient Whispers</p>
+    </div>
+</section>
+
+<!-- Main Content with Sidebar -->
+<main class="blog-container">
+    <!-- Main Article Content -->
+    <article class="blog-content">
+        <p class="head">There are places in the world where time seems to stand still. Bagan, Myanmar, is one of them. A mystical land dotted with thousands of ancient temples, rising out of the mist like echoes from a forgotten past. But beyond the history and the postcard-perfect landscapes, Bagan is a place where the air hums with ancient whispers, where the first light of dawn brings a sense of magic unlike anywhere else.</p>
+        
+        <h2>The Enchantment of a Bagan Sunrise</h2>
+        <img src="sunrise.jpg" alt="Bagan Sunrise" class="blog-image">
+        <p class="head">If there is one experience that defines Bagan, it is chasing the sunrise. There’s something deeply moving about climbing the worn steps of an ancient pagoda in the predawn darkness, feeling the cool morning air, and waiting in silence as the first sliver of golden light spills across the horizon. The temples—over 2,000 of them—slowly emerge from the shadows, their silhouettes forming an otherworldly skyline. And then, as if on cue, hot air balloons begin to rise, floating silently over the sacred land, adding to the dreamlike beauty of it all.</p>
+        
+        <h2>The Hidden Temples and Secret Pathways</h2>
+        <img src="hiddentemple.jpg" alt="Hidden Temple" class="blog-image">
+        <p class="head">While most visitors flock to famous sites like Ananda Temple and Shwezigon Pagoda, the true magic of Bagan lies in its hidden corners. The best way to explore? Rent an e-bike and let curiosity guide you. Down dusty, unmarked paths, you’ll stumble upon forgotten temples where intricate murals still whisper tales from centuries past. Climbing up a lesser-known pagoda and sitting alone with history is a moment of peace that Bagan gifts to those who seek it.</p>
+        
+        <h2>The Timeless Rhythm of Local Life</h2>
+        <img src="locallife.jpg" alt="Local Life in Bagan" class="blog-image">
+        <p class="head">Beyond its temples, Bagan pulses with a quiet, timeless rhythm. The bustling Nyaung U market offers a glimpse into local life, where vendors sell everything from fresh produce to lacquerware crafted by skilled artisans. Along the banks of the Irrawaddy River, fishermen cast their nets as they have for generations, and ox carts trundle along dirt roads, defying the modern world that waits beyond this ancient kingdom.</p>
+        
+        <h2>Savoring the Flavors of Myanmar</h2>
+        <img src="food.jpg" alt="Myanmar Food" class="blog-image">
+        <p class="head">No journey is complete without savoring the flavors of a place, and Bagan is no exception. From a hearty bowl of mohinga, Myanmar’s beloved fish noodle soup, to tea leaf salads bursting with texture and flavor, every meal is a journey into the country’s rich culinary traditions. For the best view with your meal, find a riverside restaurant, sip on tamarind-flavored juice, and watch the sun dip below the horizon in a fiery farewell.</p>
+        
+        <h2>A Journey Back in Time</h2>
+        <p class="head">Bagan is more than just a destination; it’s an experience that lingers long after you leave. It’s the hush of dawn as history awakens before your eyes. It’s the quiet hum of temple bells in the distance. It’s the feeling of standing atop an ancient structure, watching the past and present intertwine in a golden embrace.</p>
+    </article>
+
+    <!-- Sidebar for Related Content -->
+    <aside class="sidebar">
+        <h3>Related Posts</h3>
+        <div class="related-post">
+            <img src="travel-photo2.jpg" alt="Related Post 1">
+            <p>Exploring the National Park</p>
+        </div>
+        <div class="related-post">
+            <img src="travel-photo1.jpg" alt="Related Post 2">
+            <p>A Guide to Myanmar's Hidden Gems</p>
+        </div>
+    </aside>
+</main>
+<!-- Footer Section -->
+<footer>
+    <div class="footer-content">
+        <p>Follow me on social media for more travel stories and photos!</p>
+        <ul class="social-links">
+            <li><a href="www.instagram.com">Instagram</a></li>
+            <li><a href="www.facebook.com">Facebook</a></li>
+            <li><a href="www.twitter.com">Twitter</a></li>
+        </ul>
+    </div>
+</footer>
+   
+</body>
+</html>
